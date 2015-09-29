@@ -1,0 +1,23 @@
+<ion-view>
+	<ion-content class="loginBackground">
+		<div class="card card_form no_background" >
+      		<form ng-submit="doSignupAction()">
+      		<label class="item item-input">
+				<input type="text" placeholder="Username" ng-model="signup.username">
+			</label>
+			<br />
+	        <label class="item item-input">
+	        	<input type="text" placeholder="Email" ng-model="signup.email">
+	        </label>
+	        <br />
+	        <label class="item item-input">
+	        	<input type="password" placeholder="Password" ng-model="signup.password">
+	        </label>
+	        <button type="submit" class="button button-small button-positive button-centerd">Sign Up</button>
+	      </form> 
+	     <a ui-sref='login' class="button button-clear button-block text_white no_margin">Already have Account</a>
+		</div>
+    </div>
+  
+	</ion-content>
+</ion-view>

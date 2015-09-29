@@ -1,25 +1,24 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      
+<ion-view>
+  <ion-content class="loginBackground">
+    <div class="card card_form no_background" >
+      <form ng-submit="doLoginAction(login)">
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="login.email">
+        </label>
+        <br />
+        <label class="item item-input">
+          <input type="password" placeholder="Password" ng-model="login.password">
+        </label>
+        <button type="submit" class="button button-small button-positive button-centerd">Login</button>
+      </form> 
     </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
+    <div class="row no_padding">
+      <div class="col no_padding col-50 text-left">
+        <a ui-sref='forgot' class="button button-clear button-block no_margin text_white">Forgot Password?</a>
       </div>
-    </form>
+      <div class="col no_padding col-50 text-right">
+        <a ui-sref='signup' class="button button-clear button-block text_white no_margin">create New account</a>
+      </div>
+    </div>
   </ion-content>
-</ion-modal-view>
+</ion-view>

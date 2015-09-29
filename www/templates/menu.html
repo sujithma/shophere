@@ -1,36 +1,53 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus>
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-
-      <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-        </button>
+    <ion-nav-bar class="no-padding background_color">
+      <ion-nav-back-button hide-back-button="true" class="button-clear"></ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon text_white"></button>
       </ion-nav-buttons>
+      <ion-nav-buttons side="left" style="top:0 !important;left:0 !important;bottom:0 !important;"></ion-nav-buttons>
+      <ion-nav-title></ion-nav-title>
     </ion-nav-bar>
-    <ion-nav-view name="menuContent"></ion-nav-view>
+    <ion-nav-view name="nav"></ion-nav-view>
   </ion-side-menu-content>
-
-  <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
-    </ion-header-bar>
-    <ion-content>
-      <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
-      </ion-list>
+  <ion-side-menu side="right">
+    <ion-content class="body"  style="background:#236D0C; overflow-Y:auto;text-align:left!important;">
+      <div class="list no_background">
+        <a class="item no_background">
+          <!-- <img src="img/1437640892_user_male2.png" style="width:30%; margin:0 35%;">
+          <h2 class="fs-24 text-center text_white">{{username}}</h2> -->
+          Home
+        </a>
+         <a ui-sref="nav.home" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
+          <i class="icon ion-home"></i>
+         Home
+        </a>
+        <a ui-sref="nav.products" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
+          <i class="icon ion-clipboard"></i>
+         Products
+        </a>
+        <a ui-sref="nav.purchase" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
+          <i class="icon ion-bag"></i>
+         Purchase
+        </a>
+        <a ui-sref="nav.sales" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
+          <i class="icon ion-ios-cart"></i>
+         Sales
+        </a>
+        <a ui-sref="nav.profit" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
+          <i class="icon ion-ios-paper"></i>
+         Profit
+        </a>
+        <a ui-sref="nav.bank" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
+          <i class="icon ion-social-usd"></i>
+         Bank  Details
+        </a>
+        <a ng-click="doLogoutAction()" class="item item-icon-left no_background text_white" href="javascript:void(0);" nav-clear menu-close>
+          <i class="icon ion-log-out"></i>
+          Logout
+        </a>
+      </div>
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>
+

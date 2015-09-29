@@ -1,1 +1,66 @@
 /* Empty. Add your own CSS if you like */
+
+.border_none{
+	border-bottom:none !important;
+}
+.card_form{
+	width: 80% !important;
+	margin: 0 auto !important;
+}
+
+.no_background{
+	background:none !important;
+	box-shadow:none !important;
+	border:none !important;
+}
+.header-item{
+	text-align:center !important;
+}
+.background_color{
+	background:#34B102 !important;
+	color:#fff !important;
+}
+.text_white{
+	color:#fff !important;
+}
+.no_margin{
+	margin:0 !important;
+}
+.no_padding{
+	padding:0 !important;
+}
+a{
+	text-decoration:none !important;
+}
+.fs-20{
+	font-size:20px;
+}
+.pull-right{
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+
+.loginBackground{
+	background:green;
+	vertical-align: middle;
+	padding-top: 10%;
+	display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+
+	
+}
+.button-centerd{
+	width:60%;
+	margin:5% 20%;
+	font-size: 14px;
+}
+
+.scroll {
+  
+  height: 100%;
+ }
+ .center{
+ 	
+ }
