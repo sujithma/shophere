@@ -42,7 +42,7 @@ a{
 }
 
 .loginBackground{
-	background:green;
+	background:grey;
 	vertical-align: middle;
 	padding-top: 10%;
 	display: table-cell;
@@ -62,5 +62,9 @@ a{
   height: 100%;
  }
  .center{
- 	
+
  }
+ .header .col {
+  background-color:grey;
+}
+

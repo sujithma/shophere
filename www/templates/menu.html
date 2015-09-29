@@ -1,6 +1,6 @@
 <ion-side-menus>
   <ion-side-menu-content>
-    <ion-nav-bar class="no-padding background_color">
+    <ion-nav-bar  class="bar-dark">
       <ion-nav-back-button hide-back-button="true" class="button-clear"></ion-nav-back-button>
       <ion-nav-buttons side="right">
         <button menu-toggle="right" class="button button-icon icon ion-navicon text_white"></button>
@@ -11,13 +11,10 @@
     <ion-nav-view name="nav"></ion-nav-view>
   </ion-side-menu-content>
   <ion-side-menu side="right">
-    <ion-content class="body"  style="background:#236D0C; overflow-Y:auto;text-align:left!important;">
-      <div class="list no_background">
-        <a class="item no_background">
-          <!-- <img src="img/1437640892_user_male2.png" style="width:30%; margin:0 35%;">
-          <h2 class="fs-24 text-center text_white">{{username}}</h2> -->
-          Home
-        </a>
+   <ion-header-bar class="bar-stable bar-dark">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content style="background:grey">
          <a ui-sref="nav.home" class="item item-icon-left no_background text_white" href=";" nav-clear menu-close>
           <i class="icon ion-home"></i>
          Home

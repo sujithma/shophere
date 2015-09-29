@@ -1,4 +1,7 @@
 <ion-view>
+<ion-header-bar class="bar-stable bar-dark">
+      <h1 class="title">Login</h1>
+</ion-header-bar>
   <ion-content class="loginBackground">
     <div class="card card_form no_background" >
       <form ng-submit="doLoginAction(login)">
@@ -9,11 +12,11 @@
         <label class="item item-input">
           <input type="password" placeholder="Password" ng-model="login.password">
         </label>
-        <button type="submit" class="button button-small button-positive button-centerd">Login</button>
+        <button type="submit" class="button button-small button-assertive button-centerd">Login</button>
       </form> 
     </div>
     <div class="row no_padding">
-      <div class="col no_padding col-50 text-left">
+      <div class=" no_padding col-50 text-left">
         <a ui-sref='forgot' class="button button-clear button-block no_margin text_white">Forgot Password?</a>
       </div>
       <div class="col no_padding col-50 text-right">

@@ -1,11 +1,14 @@
 <ion-view>
+<ion-header-bar class="bar-stable bar-dark">
+      <h1 class="title">Forgot Password</h1>
+</ion-header-bar>
 	<ion-content class="loginBackground">
 		<div class="card card_form no_background" >
 			<form ng-submit="doforgotAction()">
 				<label class="item item-input">
 					<input type="text" placeholder="Email" ng-model="forgot.email">
 				</label>
-				<button type="submit" class="button button-small button-positive button-centerd">Reset Password</button>
+				<button type="submit" class="button button-small button-assertive button-centerd">Reset Password</button>
 			</form>
 			<a ui-sref='login' class="button button-clear button-block text_white no_margin">login</a>
 		</div>

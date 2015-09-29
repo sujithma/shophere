@@ -1,4 +1,12 @@
 <ion-view view-title="Products">
- 
- 
+<ion-content>
+ 	<div class="row header">
+          <div class="col">Name</div>
+          <div class="col">Quantity</div>
+        </div>
+        <div class="row" ng-repeat="data in products">
+          <div class="col">{{data.name}}</div>
+          <div class="col">{{data.code}}</div>
+        </div>
+</ion-content>
 </ion-view>
